@@ -1,0 +1,14 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo "Instalando dependencias"
+      - pip install --upgrade pip
+  build:
+    commands:
+      - echo "Ejecutando procesamiento"
+      - python procesador.py datos.csv v1
+artifacts:
+  files:
+    - '**/*'
+
